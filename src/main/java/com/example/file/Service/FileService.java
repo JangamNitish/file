@@ -20,14 +20,7 @@ public class FileService {
     @Autowired
     FileRepo fileRepo;
 
-//    public FileEntity addFile(MultipartFile file) throws IOException {
-//        FileEntity fileEntity = new FileEntity();
-//        fileEntity.setFileName(file.getName());
-//        fileEntity.setSize(file.getSize());
-//        fileEntity.setFileData(file.getBytes());
-//
-//        return fileRepo.save(fileEntity);
-//    }
+
 
     public FileEntity addFile(String filepath) throws IOException {
         File file = new File(filepath);
