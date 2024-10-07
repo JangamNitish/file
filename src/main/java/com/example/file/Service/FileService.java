@@ -61,6 +61,7 @@ public class FileService {
     }
 
     public String deleteFile(int id) {
+        fileRepo.deleteById(id);
         return "File Deleted" + id;
     }
 
